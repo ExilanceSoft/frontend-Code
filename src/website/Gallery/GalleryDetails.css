@@ -1,0 +1,31 @@
+.gallery .gallery-item {
+    width: 100%; /* Ensure the container takes full width */
+    height: 200px; /* Set a fixed height for testing */
+    overflow: hidden;
+    border-right: 3px solid var(--background-color);
+    border-bottom: 3px solid var(--background-color);
+  }
+  
+  .gallery .gallery-item img {
+    width: 100%; /* Ensure the image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Debugging styles for parent elements */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
